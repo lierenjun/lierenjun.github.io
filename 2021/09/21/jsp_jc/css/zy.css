@@ -8,7 +8,7 @@ a {
 }
 
 body {
-    background: url("./img/zy/b1.png");
+    background: url("../img/zy/b1.png");
 }
 
 #main1 {
@@ -21,7 +21,7 @@ body {
 #tou_dl {
     position: relative;
     height: 54px;
-    background: url("./img/zy/OGC.gif") repeat-x;
+    background: url("../img/zy/OGC.gif") repeat-x;
 }
 
  .td_t {
