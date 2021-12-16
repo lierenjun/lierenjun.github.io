@@ -30,7 +30,7 @@ function  ss(){
 
 }
 function grzx(){
-    window.location="../grzx.html";
+    window.location="./grzx.html";
 }
 
 var main1 = document.getElementById("main1");
