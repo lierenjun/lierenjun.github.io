@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            overflow: hidden;
+            background: skyblue;
+            border-radius: 5vh;
+        }
+        .zhuti {
+            position: relative;
+            box-sizing: border-box;
+            border: 1vh solid skyblue;
+            height: 100vh;
+            width: 100vw;
+            border-radius: 10vh;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            transform: scaleX(1.2);
+            object-fit: fill;
+            width: 100vw;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>
+<!--<div class="top"></div>-->
+<div class="zhuti">
+    <video  id="sp" src="img/欢迎光临.mp4" controls loop autoplay="autoplay"  />
+</div>
+<meta http-equiv="refresh" content="6;url=登录.html">
+</body>
+<script type="text/javascript" >
+    var vi= document.getElementById('sp');
+    vi.controls=false;
+</script>
+</html>
