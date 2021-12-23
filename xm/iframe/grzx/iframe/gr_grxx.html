@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+</head>
+<body>
+<fieldset class="aa">
+    <legend>个人中心</legend>
+    <ul>
+        <li>
+            <lable>昵称:</lable>
+            <input type="text" name="Your Information" id="pet name"></li>
+        <li>
+            <lable>密码:</lable>
+            <input type="text" name="Your Information" id="password"></li>
+        <li>
+            <lable>姓名:</lable>
+            <input type="text" name="Your Information" d="name"></li>
+        <li>
+            <lable>性别:</lable>
+            <input type="text" name="Your Information" id="sex"></li>
+        <li>
+            <lable>生日:</lable>
+            <input type="text" name="Your Information" id="birthday"></li>
+        <li>
+            <lable>邮箱:</lable>
+            <input type="email" name="Your Information" id="email"></li>
+        <li>
+            <lable>手机号:</lable>
+            <input type="text" name="Your Information" id="telephone"></li>
+        <button type="text" name="tijiao" id="tijiao" value="tijiao" class="tijiao" onclick="isnull()">提交
+        </button>
+    </ul>
+    <script>
+        function isnull() {
+            if (document.getElementById("pet name").value.length == 0) {
+                alert("请输入昵称")
+            } else if (document.getElementById("password").value.length == 0) {
+                alert("请输入密码")
+            } else if (document.getElementById("name").value.length == 0) {
+                alert("请输入姓名")
+            } else if (document.getElementById("sex").value.length == 0) {
+                alert("请输入性别")
+            } else if (document.getElementById("birthday").value.length == 0) {
+                alert("请输入生日")
+            } else if (document.getElementById("email").value.length == 0) {
+                alert("请输入邮箱")
+            } else if (document.getElementById("telephone").value.length == 0) {
+                alert("请输入手机号")
+            } else {
+                alert("修改成功")
+                let d2 = document.getElementById("d2");
+                d2.style.display = "block";
+                let d1 = document.getElementById("d1");
+                d1.style.display = "block";
+            }
+        }
+
+    </script>
+</fieldset>
+</body>
+</html>

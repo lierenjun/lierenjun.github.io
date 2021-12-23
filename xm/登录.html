@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/登录.css" type="text/css">
+</head>
+<body>
+<div id="main">
+    <div id="left"></div>
+    <div id="right">
+        <div class="abc" style="float: right">
+            <a href="熊猫入口.html">主页</a>
+            <a href="">用户协议</a>
+            <a href="">隐私政策</a>
+            <a href="">帮助中心</a>
+        </div>
+        <div id="zc">
+            <div style="width: 10px;height: 30px"><img src="img/巴士.png" alt="" width="60px" height="60px"></div>
+            <form action="">
+                <div style="text-align: center" class="dlzc">
+
+                    <h2>欢迎登录熊猫乐园</h2>
+                </div>
+                <div class="dl" id="dl">
+                    <p>
+                        账号：<input type="text" id="usename" placeholder="不多于十一位数">
+                    </p>
+                    <p>
+                        密码：<input type="text" id="password" placeholder="纯数字(不多于10位)">
+                    </p>
+                    <p>
+                        <input type="button" value="登录" id="bt1" style="border-radius: 20px" class="bdl" title="登录" >
+                        <input type="reset" value="重置" style="border-radius: 20px" class="bcz">
+                    </p>
+                </div>
+                <p class="qye">
+                    <input type="radio" value="">已阅读并同意巴士号
+                    <a style="color: blue" href="https://www.baidu.com/">隐私政策</a>
+                    和
+                    <a style="color: blue" href="https://www.baidu.com/">用户协议</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    <div id="dibu">
+        熊猫熊猫乐园乐园版权所有-粤8208208820-无证上号网站-加盟地点:gdpz学院
+    </div>
+
+</div>
+<script>
+    var zh1 = document.getElementById("usename");
+    var pw1 = document.getElementById("password");
+    var a = document.getElementById("bt1");
+
+    a.onclick = function () {
+        let d2=document.getElementById("d2");
+        let d1=document.getElementById("d1");
+        if (zh1.value == 'aaa'&&pw1.value == 123) {
+            d2.style.display="block";
+            d1.style.display="block";
+            d1.textContent= "登录成功 欢迎来到熊猫乐园" ;
+            setTimeout('window.location="zy.html"',3000);
+        } else if (zh1.value =="" && pw1.value == "") {
+            d2.style.display='block';
+            d1.style.display='block';
+            d1.textContent= "登录成功 欢迎来到熊猫乐园" ;
+            setTimeout('window.location="zy.html"',3000);
+        } else {
+            d2.style.display="block";
+            d0.style.display="block";
+            d1.textContent= "登录失败，请重新登录" ;
+            setTimeout('window.location="登录.html"',3000);
+        }
+    }
+let dl = document.getElementById("zc");
+
+    window.addEventListener('load', function() {
+        dl.style.transform="scaleX("+window.innerWidth/1000+")" + "scaleY("+window.innerWidth/1000+")";
+        window.addEventListener('resize', function() {
+            dl.style.transform="scaleX("+window.innerWidth/1000+")" + "scaleY("+window.innerWidth/1000+")";
+        })
+    })
+</script>
+<!--弹框-->
+
+<div id="d2"></div>
+<div id="d1">
+    登录成功 欢迎来到熊猫乐园
+</div>
+<!---->
+</body>
+</html>

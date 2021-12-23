@@ -1,0 +1,161 @@
+* {
+    margin: 0 ;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: url("../img/zy/b1.png");
+}
+
+#tou_dl {
+    position: relative;
+    height: 54px;
+    background: url("../img/zy/OGC.gif") repeat-x;
+}
+
+.td_t {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: yellowgreen;
+}
+.td_l {
+    float: left;
+    width: 35%;
+    height: 100%;
+
+}
+.td_l ul {
+    margin: 0 25px;
+}
+.td_l li {
+    float: left;
+    list-style-type: none;
+}
+.td_l a {
+    display: block;
+    height: 100%;
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+.td_t a:hover {
+    color: #6bb7d0;
+}
+.td_c {
+    position: absolute;
+    top: 0;
+    left: 37vw;
+    height: 40px;
+    margin: 5px 0;
+    opacity: 1;
+}
+.td_c .tdc1 {
+    text-indent: 1em;
+    border: none;
+    outline: none;
+    width: 20vw;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    height: 100%;
+}
+.td_c .tdc2 {
+    border: 0 white solid;
+    box-sizing: border-box;
+    float: left;
+    display: block;
+    width: 4vw;
+    height: 100%;
+    cursor: pointer;
+    color: #7a7a7a;
+}
+.td_c .tdc2:active {
+    background: rgb(252, 247, 247);
+}
+.td_r {
+    float: right;
+    width: 35%;
+    height: 100%;
+}
+.td_r form {
+    float: right;
+    list-style-type: none;
+    height: 100%;
+}
+.td_r form li {
+    list-style-type: none;
+    float: right;
+    height: 30px;
+}
+.td_r a {
+    display: block;
+    height: 100%;
+    margin: 0 20px;
+    color: white;
+}
+.td_r .tdr_tx {
+    box-sizing: border-box;
+    border: white solid 1px;
+    width:46px;
+    height: 46px;
+    background: red;
+    border-radius: 23px;
+    margin: 3px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.main_sp {
+    position: relative;
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+.main_sp .kfz {
+    position: absolute;
+    top: 200px;
+    width: 1000px;
+    font-size: 100px;
+}
+
+
+
+.b1_dh {
+    position: relative;
+    height: 50px;
+    border-radius: 0 0 30px 30px;
+    background: yellowgreen;
+}
+.b1_dh ul {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.b1_dh li {
+    position: relative;
+    float: left;
+    height: 50px;
+    list-style-type: none;
+    overflow: hidden;
+    z-index: 2;
+    transition: all 0.5s ease 0s;
+}
+.b1_dh li:hover {
+    height: 200px;
+}
+
+.b1_dh a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    background: yellowgreen;
+    color: azure;
+}
+.b1_dh a:hover {
+    color: #6bb7d0;
+}
